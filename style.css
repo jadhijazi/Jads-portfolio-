@@ -395,3 +395,69 @@ hr {
     background-color: var(--color-primary);
     margin: var(--space-lg) 0;
 }
+
+.page-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: var(--space-md);
+    border: 3px solid var(--color-accent-2);
+    border-radius: 1.2rem;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(92, 80, 71, 0.15);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(92, 80, 71, 0.25);
+}
+
+.card.featured {
+    grid-column: span 2;
+}
+
+/* ========== CSS GRID: TWO-COLUMN LAYOUT (About.html) ========== */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 1.5rem;
+}
+
+.main-content {
+    grid-column: 1;
+}
+
+aside.sidebar {
+    grid-column: 2;
+    background-color: var(--color-grey-1);
+    padding: var(--space-md);
+    border-radius: 0.8rem;
+    border: 2px solid var(--color-grey-2);
+    height: fit-content;
+}
+
+aside.sidebar h3 {
+    margin-top: 0;
+}
+
+aside.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside.sidebar li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-grey-2);
+}
+
+aside.sidebar li:last-child {
+    border-bottom: none;
+}
