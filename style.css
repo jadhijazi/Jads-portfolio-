@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    
+
+    --color-primary: #1a5cff;
+    --color-secondary: #003399;
+    --color-accent-1: #ffcc00;
+    --color-accent-2: #ff5733;
+    --color-grey-1: #f5f5f5;
+    --color-grey-2: #cccccc;
+    --color-grey-3: #555555;
+    --font-main: 'Lora', Georgia, serif;
+    --font-title: 'Playfair Display', serif;
+    --space-sm: 0.5rem;
+    --space-md: 1.5rem;
+    --space-lg: 3rem;
+
+    
+}
+
+h1{
+    font-family:"Saira Stencil", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--grey-1);
+    color: var(--grey-3);
+}
