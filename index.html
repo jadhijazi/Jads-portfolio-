@@ -1,43 +1,87 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 
 <head>
-
-<title>  Jad's Portfolio  </title>
-
-<meta charset= "UTF-8"> 
-<meta name = "description" content = "This is Jads Portfolio">
-
-<link rel="stylesheet" href="style.css"> 
-
+    <title>Jad's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Jads Portfolio">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h1> My Portfolio</h1> <hr> 
-<nav> 
-    <ul> 
-        <li> <a href = "About.html"> About </a> </li>
-        <li> <a href = "Skills.html"> Skills </a> </li>
-        <li> <a href = "Academic.html"> Academic </a> </li>
-        <li> <a href = "contact.html"> Contact </a> </li>
-        <li> <a href = "projects.html"> Projects </a> </li>
-    </ul>
+
+<nav>
+    <div>
+        <a href="index.html" class="logo">Jad's Portfolio</a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Academic.html">Academic</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </div>
 </nav>
 
-<header> 
-        <h1> Jad Mahmoud Ali Hijazi </h1> 
-        <p> My submission for lab one</p>
-    </header>
+<header>
+    <div class="text-block">
+        <h1>Jad Mahmoud Ali Hijazi</h1>
+        <p>My submission for lab one</p>
+    </div>
+    <img src="pfp.jpg" alt="Profile picture" class="profile-image">
+</header>
 
+<main>
+    <section class="page-cards">
+        <article class="card featured">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi! I'm Jad, a Software Engineering student at Universiti Teknologi Malaysia. This portfolio showcases my projects, skills, and academic progress. </p>
+        </article>
 
-    <footer> 
-        <address> 
-            Done by Jad Hijazi (A24CS4048)<br>
-            Email: <a href ="Jad.hijazi06@gmail.com">Jad.hijazi06@gmail.com </a> <br>
-            Course: Cross Platform Application Development.<br>
-           <mark> please do not copy or use any part of this portfolio without my permission. because it would be considerd as copyright infringement and plagiarism, which is illegal and unethical. if you want to use any part of this portfolio, please contact me for permission and proper attribution.</mark><small> (last updated: March 23rd , 2026) </small>
-        </address>
-    </footer>
+        <article class="card">
+            <h3>About Me</h3>
+            <p>I'm passionate about software development, problem-solving, and learning new technologies. I enjoy working on projects that challenge me ( but it gets to a point =D).</p>
+            <a href="About.html">Learn More →</a>
+        </article>
+
+        <article class="card">
+            <h3>My Skills</h3>
+            <p>Proficient in HTML(im okay at it), CSS(working on it), JavaScript(soon), and various programming languages. Always try to improve in many ways.</p>
+            <a href="Skills.html">View Skills →</a>
+        </article>
+
+        <article class="card">
+            <h3>Academic Records</h3>
+            <p>Strong academic performance with a focus on Software Engineering courses and practical applications of computer science.</p>
+            <a href="Academic.html">View Records →</a>
+        </article>
+
+        <article class="card">
+            <h3>My Projects</h3>
+            <p>Explore my portfolio of web development, but this just shows my progress in the lab for a task in the previous part (Lab 1a).</p>
+            <a href="projects.html">See Projects →</a>
+        </article>
+
+        <article class="card">
+            <h3>Get in Touch</h3>
+            <p>Have a question or interested in collaborating? I'd love to hear from you! Feel free to reach out using the contact form.</p>
+            <a href="contact.html">Contact Me →</a>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <address>
+        Done by Jad Hijazi (A24CS4048)<br>
+        Email: <a href="mailto:Jad.hijazi06@gmail.com">Jad.hijazi06@gmail.com</a><br>
+        Course: Cross Platform Application Development.<br>
+        <mark>Please do not copy or use any part of this portfolio without my permission.</mark>
+        <small>(Last updated: April 5, 2026)</small>
+    </address>
+</footer>
+
 </body>
 
 </html>
